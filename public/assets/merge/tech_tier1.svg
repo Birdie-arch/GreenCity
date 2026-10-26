@@ -1,0 +1,52 @@
+<svg viewBox="0 0 120 120" width="120" height="120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="tech1-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e0f7fa" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#e0f7fa" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="glass-shard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#80deea"/>
+      <stop offset="50%" stop-color="#26c6da"/>
+      <stop offset="100%" stop-color="#00838f"/>
+    </linearGradient>
+    <linearGradient id="copper-coil" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffcc80"/>
+      <stop offset="40%" stop-color="#ff8f00"/>
+      <stop offset="80%" stop-color="#d84315"/>
+      <stop offset="100%" stop-color="#4e1b0b"/>
+    </linearGradient>
+    <filter id="soft-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#45362a" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <circle cx="60" cy="60" r="54" fill="url(#tech1-glow)"/>
+  <ellipse cx="60" cy="100" rx="36" ry="10" fill="#45362a" fill-opacity="0.2"/>
+
+  <!-- Copper Wire Coils (Layered Rings) -->
+  <g filter="url(#soft-shadow)">
+    <!-- Ring 1 -->
+    <ellipse cx="62" cy="74" rx="28" ry="16" fill="none" stroke="url(#copper-coil)" stroke-width="7"/>
+    <!-- Ring 2 -->
+    <ellipse cx="60" cy="66" rx="26" ry="15" fill="none" stroke="url(#copper-coil)" stroke-width="6.5"/>
+    <!-- Ring 3 -->
+    <ellipse cx="58" cy="58" rx="24" ry="14" fill="none" stroke="url(#copper-coil)" stroke-width="6"/>
+  </g>
+
+  <!-- Polished Recycled Sea-Glass Prism -->
+  <g filter="url(#soft-shadow)">
+    <!-- Facet 1 (Main Body) -->
+    <polygon points="42,32 78,24 88,68 52,82 32,58" fill="url(#glass-shard)" fill-opacity="0.9"/>
+    <!-- Facet 2 (Top Left Reflection) -->
+    <polygon points="42,32 78,24 64,48 32,58" fill="#e0f7fa" fill-opacity="0.6"/>
+    <!-- Facet 3 (Center Cut) -->
+    <polygon points="64,48 78,24 88,68" fill="#00acc1" fill-opacity="0.85"/>
+    <!-- Specular Highlight Streak -->
+    <line x1="45" y1="36" x2="36" y2="54" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="74" cy="30" r="2" fill="#ffffff"/>
+  </g>
+
+  <!-- Sparkle of Kinetic Clean Scrap -->
+  <path d="M88 28 L90 32 L94 34 L90 36 L88 40 L86 36 L82 34 L86 32 Z" fill="#26c6da"/>
+  <circle cx="30" cy="78" r="2.5" fill="#ffb74d"/>
+</svg>

@@ -1,0 +1,97 @@
+<svg viewBox="0 0 120 120" width="120" height="120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bonsai-aurora" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#fff8db" stop-opacity="1"/>
+      <stop offset="50%" stop-color="#ffe082" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#ffe082" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="dish-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#37474f"/>
+      <stop offset="60%" stop-color="#263238"/>
+      <stop offset="100%" stop-color="#10171a"/>
+    </linearGradient>
+    <linearGradient id="trunk-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8d6e63"/>
+      <stop offset="50%" stop-color="#5d4037"/>
+      <stop offset="100%" stop-color="#3e2723"/>
+    </linearGradient>
+    <linearGradient id="gold-leaf-1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe082"/>
+      <stop offset="40%" stop-color="#ffb300"/>
+      <stop offset="100%" stop-color="#e65100"/>
+    </linearGradient>
+    <linearGradient id="gold-leaf-2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff59d"/>
+      <stop offset="50%" stop-color="#fbc02d"/>
+      <stop offset="100%" stop-color="#f57f17"/>
+    </linearGradient>
+    <linearGradient id="gold-leaf-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#fff176"/>
+      <stop offset="100%" stop-color="#ffd54f"/>
+    </linearGradient>
+    <filter id="gold-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#ffd54f" flood-opacity="0.6"/>
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#45362a" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <circle cx="60" cy="54" r="54" fill="url(#bonsai-aurora)"/>
+  <ellipse cx="60" cy="105" rx="42" ry="9" fill="#45362a" fill-opacity="0.25"/>
+
+  <!-- Ceramic Shallow Bonsai Dish -->
+  <g>
+    <!-- Dish Feet -->
+    <rect x="34" y="99" width="6" height="5" rx="2" fill="#10171a"/>
+    <rect x="80" y="99" width="6" height="5" rx="2" fill="#10171a"/>
+    
+    <!-- Dish Bowl -->
+    <path d="M22 84 L28 98 C29 101 32 102 36 102 L84 102 C88 102 91 101 92 98 L98 84 Z" fill="url(#dish-grad)"/>
+    <ellipse cx="60" cy="84" rx="39" ry="8" fill="#455a64"/>
+    <ellipse cx="60" cy="84" rx="36" ry="6.5" fill="#2e382b"/> <!-- Moss Soil -->
+    <!-- Lush Green Moss Cushions -->
+    <ellipse cx="44" cy="84" rx="9" ry="4" fill="#7cb342"/>
+    <ellipse cx="76" cy="84" rx="10" ry="4.5" fill="#689f38"/>
+    <circle cx="58" cy="85" r="2.5" fill="#8bc34a"/>
+  </g>
+
+  <!-- Ancient Curved Gnarled Bonsai Cedar Trunk -->
+  <g>
+    <path d="M54 84 C52 74 46 64 50 56 C54 48 64 48 66 40 C68 34 64 26 62 20" stroke="url(#trunk-grad)" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <!-- Left Branch -->
+    <path d="M49 60 C40 58 32 54 28 48" stroke="url(#trunk-grad)" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <!-- Right Branch -->
+    <path d="M63 46 C74 46 84 42 88 36" stroke="url(#trunk-grad)" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <!-- Bark Highlights -->
+    <path d="M53 78 Q50 68 53 62" stroke="#a1887f" stroke-width="1.8" stroke-linecap="round" fill="none" opacity="0.6"/>
+  </g>
+
+  <!-- Cascading Glowing Golden Foliage Clouds -->
+  <g filter="url(#gold-glow)">
+    <!-- Left Canopy Cloud -->
+    <ellipse cx="26" cy="46" rx="16" ry="11" fill="url(#gold-leaf-1)"/>
+    <ellipse cx="32" cy="42" rx="12" ry="8" fill="url(#gold-leaf-2)"/>
+    <ellipse cx="28" cy="40" rx="8" ry="5" fill="url(#gold-leaf-glow)"/>
+
+    <!-- Right Canopy Cloud -->
+    <ellipse cx="88" cy="34" rx="18" ry="12" fill="url(#gold-leaf-1)"/>
+    <ellipse cx="84" cy="30" rx="14" ry="9" fill="url(#gold-leaf-2)"/>
+    <ellipse cx="86" cy="28" rx="9" ry="6" fill="url(#gold-leaf-glow)"/>
+
+    <!-- Apex Top Canopy Cloud -->
+    <ellipse cx="60" cy="18" rx="22" ry="14" fill="url(#gold-leaf-1)"/>
+    <ellipse cx="58" cy="14" rx="17" ry="10" fill="url(#gold-leaf-2)"/>
+    <ellipse cx="60" cy="12" rx="11" ry="6" fill="url(#gold-leaf-glow)"/>
+  </g>
+
+  <!-- Golden Spores & Fireflies Sparkles -->
+  <circle cx="18" cy="34" r="2.2" fill="#ffffff"/>
+  <circle cx="48" cy="22" r="2" fill="#ffffff"/>
+  <circle cx="78" cy="16" r="2.4" fill="#ffffff"/>
+  <circle cx="102" cy="30" r="2" fill="#fff59d"/>
+  <circle cx="38" cy="62" r="1.8" fill="#ffd54f"/>
+  <circle cx="72" cy="56" r="2" fill="#ffd54f"/>
+
+  <!-- Radiant Crown Star -->
+  <path d="M60 4 L62 9 L67 11 L62 13 L60 18 L58 13 L53 11 L58 9 Z" fill="#ffffff"/>
+</svg>

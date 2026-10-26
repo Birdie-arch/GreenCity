@@ -1,0 +1,84 @@
+<svg viewBox="0 0 120 120" width="120" height="120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="sprout-bg-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff8db" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#fff8db" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="pot-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#df8956"/>
+      <stop offset="50%" stop-color="#c86d3b"/>
+      <stop offset="100%" stop-color="#93431d"/>
+    </linearGradient>
+    <linearGradient id="pot-rim" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f5a473"/>
+      <stop offset="100%" stop-color="#c86d3b"/>
+    </linearGradient>
+    <linearGradient id="soil-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#5a4332"/>
+      <stop offset="100%" stop-color="#342217"/>
+    </linearGradient>
+    <linearGradient id="leaf-grad-left" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#559942"/>
+      <stop offset="50%" stop-color="#7dc44d"/>
+      <stop offset="100%" stop-color="#b6f072"/>
+    </linearGradient>
+    <linearGradient id="leaf-grad-right" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3e7e31"/>
+      <stop offset="50%" stop-color="#67b23c"/>
+      <stop offset="100%" stop-color="#9ce05d"/>
+    </linearGradient>
+    <linearGradient id="stem-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8fd756"/>
+      <stop offset="100%" stop-color="#46852a"/>
+    </linearGradient>
+    <filter id="soft-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#45362a" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Ambient Backdrop Glow -->
+  <circle cx="60" cy="60" r="54" fill="url(#sprout-bg-glow)"/>
+
+  <!-- Ground Drop Shadow -->
+  <ellipse cx="60" cy="102" rx="34" ry="10" fill="#45362a" fill-opacity="0.18"/>
+
+  <!-- Terracotta Mini Pot -->
+  <g filter="url(#soft-shadow)">
+    <!-- Pot Body -->
+    <path d="M38 72 L44 98 C45 102 49 104 53 104 L67 104 C71 104 75 102 76 98 L82 72 Z" fill="url(#pot-grad)"/>
+    <!-- Pot Specular Highlight -->
+    <path d="M41 74 L46 96 C47 99 49 101 52 101 L54 101 C50 101 47 98 46 94 L42 74 Z" fill="#ffffff" fill-opacity="0.25"/>
+
+    <!-- Pot Rim -->
+    <ellipse cx="60" cy="71" rx="24" ry="7" fill="url(#pot-rim)"/>
+    
+    <!-- Rich Loam Soil -->
+    <ellipse cx="60" cy="71" rx="21" ry="5.5" fill="url(#soil-grad)"/>
+    <!-- Soil Pebbles -->
+    <circle cx="53" cy="72" r="1.5" fill="#755a45"/>
+    <circle cx="68" cy="70" r="1.2" fill="#755a45"/>
+    <circle cx="61" cy="73" r="1" fill="#8d6e55"/>
+  </g>
+
+  <!-- Growing Green Sprout Stem -->
+  <path d="M60 71 Q60 54 59 44" stroke="url(#stem-grad)" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Left Cotyledon Leaf -->
+  <path d="M59 52 C50 48 38 43 36 34 C35 27 44 26 53 35 C58 40 59 48 59 52 Z" fill="url(#leaf-grad-left)"/>
+  <!-- Left Leaf Vein -->
+  <path d="M57 48 Q49 40 43 33" stroke="#bdf77f" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0.8"/>
+  <!-- Dew Drop on Left Leaf -->
+  <circle cx="43" cy="32" r="2.2" fill="#ffffff" fill-opacity="0.9"/>
+  <circle cx="42.5" cy="31.5" r="0.8" fill="#ffffff"/>
+
+  <!-- Right Heart Leaf -->
+  <path d="M59 46 C67 40 82 39 85 30 C87 23 76 22 66 31 C61 36 60 43 59 46 Z" fill="url(#leaf-grad-right)"/>
+  <!-- Right Leaf Vein -->
+  <path d="M60 43 Q69 36 77 29" stroke="#bdf77f" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0.8"/>
+
+  <!-- Tiny Center Bud Leaf -->
+  <path d="M59 44 C57 38 58 31 60 27 C62 31 63 38 60 44 Z" fill="#9de25d"/>
+
+  <!-- Sun Sparkle -->
+  <path d="M60 17 L62 22 L67 24 L62 26 L60 31 L58 26 L53 24 L58 22 Z" fill="#fff7b2" opacity="0.85"/>
+</svg>

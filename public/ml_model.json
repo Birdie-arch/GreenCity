@@ -1,0 +1,40 @@
+{
+  "model_name": "GreenCity Environmental Pollution Regressor v1.0",
+  "algorithm": "Ridge Regression with Random Forest Cross-Validation",
+  "feature_names": [
+    "initial_pollution",
+    "waste_cleanup",
+    "recycling_stations",
+    "green_canopy",
+    "bio_reeds",
+    "water_aeration",
+    "community_hub"
+  ],
+  "coefficients": {
+    "initial_pollution": 0.5100196841468152,
+    "waste_cleanup": -18.658648882687533,
+    "recycling_stations": -3.3918301099518513,
+    "green_canopy": -10.588906089604682,
+    "bio_reeds": -10.605370092488782,
+    "water_aeration": -6.292107499445809,
+    "community_hub": -3.8488737519808076
+  },
+  "intercept": 13.165014862893596,
+  "metrics": {
+    "r2_score": 0.7532,
+    "mae": 5.73,
+    "rmse": 7.19,
+    "test_sample_count": 400,
+    "training_sample_count": 1600
+  },
+  "feature_importance_rf": {
+    "initial_pollution": 0.2441,
+    "waste_cleanup": 0.243,
+    "recycling_stations": 0.1516,
+    "green_canopy": 0.0652,
+    "bio_reeds": 0.1169,
+    "water_aeration": 0.1624,
+    "community_hub": 0.0167
+  },
+  "dataset_notes": "Trained on 2,000 synthetic urban micro-climate intervention samples modeling water turbidity, sediment plastics, and nitrogen run-off reduction. Limitations: Synthetic model calibrated for casual diorama gameplay, not certified municipal engineering."
+}

@@ -1,0 +1,89 @@
+<svg viewBox="0 0 120 120" width="120" height="120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="flower-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff2c2" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#fff2c2" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ceramic-pot" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6ea9d9"/>
+      <stop offset="60%" stop-color="#4685ba"/>
+      <stop offset="100%" stop-color="#2d5e86"/>
+    </linearGradient>
+    <linearGradient id="ceramic-rim" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#93c4eb"/>
+      <stop offset="100%" stop-color="#4685ba"/>
+    </linearGradient>
+    <linearGradient id="petal-pink" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffb8cf"/>
+      <stop offset="50%" stop-color="#f8799e"/>
+      <stop offset="100%" stop-color="#cf3b64"/>
+    </linearGradient>
+    <linearGradient id="petal-coral" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd5df"/>
+      <stop offset="100%" stop-color="#f46f97"/>
+    </linearGradient>
+    <linearGradient id="flower-center" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff176"/>
+      <stop offset="70%" stop-color="#fbc02d"/>
+      <stop offset="100%" stop-color="#e65100"/>
+    </linearGradient>
+    <filter id="soft-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#45362a" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <circle cx="60" cy="58" r="54" fill="url(#flower-glow)"/>
+  <ellipse cx="60" cy="103" rx="36" ry="10" fill="#45362a" fill-opacity="0.2"/>
+
+  <!-- Glazed Ceramic Blue Pot -->
+  <g filter="url(#soft-shadow)">
+    <path d="M36 70 L42 98 C43 103 48 105 53 105 L67 105 C72 105 77 103 78 98 L84 70 Z" fill="url(#ceramic-pot)"/>
+    <!-- Cute pot band -->
+    <path d="M38 80 Q60 84 82 80 L81 84 Q60 88 39 84 Z" fill="#ffffff" fill-opacity="0.4"/>
+    <!-- Pot Specular Highlight -->
+    <path d="M40 72 L44 96 C45 99 47 101 50 101 L53 101 C49 101 46 98 45 94 L41 72 Z" fill="#ffffff" fill-opacity="0.35"/>
+    
+    <!-- Pot Rim -->
+    <ellipse cx="60" cy="69" rx="26" ry="7.5" fill="url(#ceramic-rim)"/>
+    <ellipse cx="60" cy="69" rx="22" ry="6" fill="#39261b"/>
+  </g>
+
+  <!-- Foliage Leaves behind Flower -->
+  <!-- Left Leaf -->
+  <path d="M56 66 C42 66 28 58 26 48 C33 46 45 52 54 62 Z" fill="#58a038"/>
+  <path d="M52 64 Q38 56 30 50" stroke="#9de25d" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+  <!-- Right Leaf -->
+  <path d="M64 66 C78 66 92 58 94 48 C87 46 75 52 66 62 Z" fill="#478d2b"/>
+  <path d="M68 64 Q82 56 90 50" stroke="#9de25d" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+  <!-- Front Leaf -->
+  <path d="M60 69 C55 76 49 84 44 85 C42 81 48 72 57 68 Z" fill="#72bd45"/>
+
+  <!-- Main Flower Stem -->
+  <path d="M60 69 Q60 48 60 40" stroke="#529b32" stroke-width="5" stroke-linecap="round" fill="none"/>
+
+  <!-- Blooming Petals (8-petal layered rosette) -->
+  <g filter="url(#soft-shadow)">
+    <!-- Back Petals -->
+    <ellipse cx="60" cy="22" rx="7.5" ry="12" fill="url(#petal-pink)"/>
+    <ellipse cx="60" cy="56" rx="7.5" ry="12" fill="url(#petal-pink)"/>
+    <ellipse cx="43" cy="39" rx="12" ry="7.5" fill="url(#petal-pink)"/>
+    <ellipse cx="77" cy="39" rx="12" ry="7.5" fill="url(#petal-pink)"/>
+
+    <!-- Diagonal Petals -->
+    <ellipse cx="48" cy="27" rx="8" ry="12" transform="rotate(-45 48 27)" fill="url(#petal-coral)"/>
+    <ellipse cx="72" cy="27" rx="8" ry="12" transform="rotate(45 72 27)" fill="url(#petal-coral)"/>
+    <ellipse cx="48" cy="51" rx="8" ry="12" transform="rotate(45 48 51)" fill="url(#petal-coral)"/>
+    <ellipse cx="72" cy="51" rx="8" ry="12" transform="rotate(-45 72 51)" fill="url(#petal-coral)"/>
+
+    <!-- Golden Center Pistil -->
+    <circle cx="60" cy="39" r="11" fill="url(#flower-center)"/>
+    <!-- Pistil Texture Rings -->
+    <circle cx="60" cy="39" r="8" fill="none" stroke="#d8840c" stroke-width="1.2" stroke-dasharray="2 2"/>
+    <circle cx="60" cy="39" r="4.5" fill="#fdd835"/>
+    <circle cx="58" cy="37" r="2" fill="#fff9c4"/>
+  </g>
+
+  <!-- Sweet Sparkles -->
+  <circle cx="34" cy="22" r="2" fill="#ffd5df"/>
+  <circle cx="86" cy="24" r="2.5" fill="#fff176"/>
+</svg>

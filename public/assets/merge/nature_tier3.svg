@@ -1,0 +1,100 @@
+<svg viewBox="0 0 120 120" width="120" height="120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bush-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e8f8e0" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#e8f8e0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="trough-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8d6e53"/>
+      <stop offset="60%" stop-color="#5d4037"/>
+      <stop offset="100%" stop-color="#3e2723"/>
+    </linearGradient>
+    <linearGradient id="leaf-dark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#468334"/>
+      <stop offset="100%" stop-color="#234e17"/>
+    </linearGradient>
+    <linearGradient id="leaf-mid" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6bb343"/>
+      <stop offset="100%" stop-color="#38741e"/>
+    </linearGradient>
+    <linearGradient id="leaf-light" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9fe060"/>
+      <stop offset="100%" stop-color="#55992b"/>
+    </linearGradient>
+    <radialGradient id="berry-red" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#ff6e6e"/>
+      <stop offset="40%" stop-color="#e53935"/>
+      <stop offset="100%" stop-color="#8e0000"/>
+    </radialGradient>
+    <filter id="soft-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#45362a" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <circle cx="60" cy="56" r="54" fill="url(#bush-glow)"/>
+  <ellipse cx="60" cy="104" rx="38" ry="10" fill="#45362a" fill-opacity="0.22"/>
+
+  <!-- Wooden Planter Box -->
+  <g filter="url(#soft-shadow)">
+    <!-- Trough Body -->
+    <path d="M30 76 L36 99 C37 103 40 105 45 105 L75 105 C80 105 83 103 84 99 L90 76 Z" fill="url(#trough-grad)"/>
+    <!-- Cedar Planks Line -->
+    <line x1="33" y1="86" x2="87" y2="86" stroke="#3e2723" stroke-width="2"/>
+    <line x1="35" y1="95" x2="85" y2="95" stroke="#3e2723" stroke-width="2"/>
+    <!-- Brass Corner Brackets -->
+    <rect x="33" y="76" width="5" height="25" rx="1.5" fill="#d4af37"/>
+    <rect x="82" y="76" width="5" height="25" rx="1.5" fill="#d4af37"/>
+    <ellipse cx="60" cy="76" rx="31" ry="8" fill="#a17a59"/>
+    <ellipse cx="60" cy="76" rx="27" ry="6" fill="#301f16"/>
+  </g>
+
+  <!-- Dense Shrub Foliage Clusters (Layered Minami-Lane style clouds) -->
+  <g filter="url(#soft-shadow)">
+    <!-- Back Dark Canopy -->
+    <circle cx="44" cy="48" r="19" fill="url(#leaf-dark)"/>
+    <circle cx="76" cy="48" r="19" fill="url(#leaf-dark)"/>
+    <circle cx="60" cy="38" r="22" fill="url(#leaf-dark)"/>
+
+    <!-- Mid Foliage Canopy -->
+    <circle cx="36" cy="54" r="16" fill="url(#leaf-mid)"/>
+    <circle cx="84" cy="54" r="16" fill="url(#leaf-mid)"/>
+    <circle cx="50" cy="46" r="18" fill="url(#leaf-mid)"/>
+    <circle cx="70" cy="46" r="18" fill="url(#leaf-mid)"/>
+    <circle cx="60" cy="32" r="17" fill="url(#leaf-mid)"/>
+
+    <!-- Front Sunny Canopy -->
+    <circle cx="45" cy="58" r="14" fill="url(#leaf-light)"/>
+    <circle cx="75" cy="58" r="14" fill="url(#leaf-light)"/>
+    <circle cx="60" cy="50" r="16" fill="url(#leaf-light)"/>
+    <circle cx="60" cy="26" r="12" fill="url(#leaf-light)"/>
+  </g>
+
+  <!-- Ripe Ruby Berries Clusters -->
+  <!-- Top Berry -->
+  <g filter="url(#soft-shadow)">
+    <circle cx="60" cy="22" r="5" fill="url(#berry-red)"/>
+    <circle cx="58.5" cy="20.5" r="1.5" fill="#ffffff" fill-opacity="0.8"/>
+
+    <!-- Left Cluster -->
+    <circle cx="38" cy="46" r="5.5" fill="url(#berry-red)"/>
+    <circle cx="36" cy="44" r="1.6" fill="#ffffff" fill-opacity="0.8"/>
+    <circle cx="46" cy="43" r="4.8" fill="url(#berry-red)"/>
+    <circle cx="44.5" cy="41.5" r="1.3" fill="#ffffff" fill-opacity="0.8"/>
+
+    <!-- Center Cluster -->
+    <circle cx="56" cy="52" r="6" fill="url(#berry-red)"/>
+    <circle cx="54" cy="50" r="1.8" fill="#ffffff" fill-opacity="0.85"/>
+    <circle cx="66" cy="50" r="5.2" fill="url(#berry-red)"/>
+    <circle cx="64.5" cy="48.5" r="1.5" fill="#ffffff" fill-opacity="0.8"/>
+
+    <!-- Right Cluster -->
+    <circle cx="80" cy="44" r="5.5" fill="url(#berry-red)"/>
+    <circle cx="78" cy="42" r="1.6" fill="#ffffff" fill-opacity="0.8"/>
+    <circle cx="74" cy="58" r="5" fill="url(#berry-red)"/>
+    <circle cx="72.5" cy="56.5" r="1.4" fill="#ffffff" fill-opacity="0.8"/>
+  </g>
+
+  <!-- Dew Sparkles -->
+  <path d="M26 36 L27.5 39.5 L31 41 L27.5 42.5 L26 46 L24.5 42.5 L21 41 L24.5 39.5 Z" fill="#fff9c4"/>
+  <circle cx="94" cy="38" r="2" fill="#fff9c4"/>
+</svg>
